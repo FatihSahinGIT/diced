@@ -102,7 +102,8 @@ body {
   }
   .nav-list {
     width: 100%;
-    gap: 5px;
+    gap: 10px;
+    margin: 1rem;
   }
 
   .nav-list li a {
@@ -201,11 +202,11 @@ body {
   }
 
   #main-header {
-    font-size: var(--h1);
+    font-size: 3.5rem;
   }
 
   #main-subtext {
-    font-size: var(--h4);
+    font-size: var(--h3);
   }
 
   .main-text {
@@ -214,7 +215,7 @@ body {
   }
 
   #main-text-content {
-    font-size: var(--text);
+    font-size: var(--h3);
   }
 
   #main-text-btn a {
@@ -280,12 +281,12 @@ body {
   }
 
   #philo-header {
-    font-size: var(--h1);
+    font-size: 2.8rem;
   }
 
   #philo-text,
   #strong {
-    width: 350px;
+    width: 280px;
     font-size: var(--h3);
   }
 }
@@ -390,15 +391,16 @@ body {
 /* === ABOUT US MEDIA QUERY === */
 @media screen and (max-width: 768px) {
   .about-container {
-    height: 300vh;
+    height: 240vh;
   }
 
   #about-artist-header {
-    font-size: var(--h1);
+    font-size: 4.5rem;
+    padding: 1rem;
   }
 
   #about-text {
-    font-size: var(--h3);
+    font-size: var(--h2);
   }
 
   .about-melvin,
@@ -407,13 +409,13 @@ body {
   }
 
   #about-img {
-    max-width: 220px;
+    max-width: 280px;
   }
 
   #about-conclusion-text,
   #about-conclusion-text b {
     font-size: var(--h1);
-    width: 60%;
+    width: 70%;
   }
 }
 
@@ -428,14 +430,4 @@ body {
   100% {
     transform: translatey(0px);
   }
-}
-
-/* === SWUP === */
-.transition-fade {
-  transition: 0.4s;
-  opacity: 1;
-}
-
-html.is-animating .transition-fade {
-  opacity: 0;
 }

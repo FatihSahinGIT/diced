@@ -32,6 +32,17 @@
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: headerFont;
+  font-weight: 600;
+  src: url("/assets/Font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("/assets/Font/Inter/Inter-VariableFont_slnt,wght.ttf");
+}
+
 body {
   background: url("/assets/private.jpg") 20% 25%;
 }
@@ -123,14 +134,14 @@ body {
 }
 
 #main-header {
-  font-family: "Montserrat", sans-serif;
+  font-family: headerFont;
   font-size: var(--giga);
   font-weight: 400;
   color: var(--white);
 }
 
 #main-subtext {
-  font-family: "Montserrat", sans-serif;
+  font-family: headerFont;
   font-size: var(--big);
 }
 

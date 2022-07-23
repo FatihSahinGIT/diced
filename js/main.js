@@ -48,7 +48,7 @@ aboutHeader.reveal("#about-header");
 
 const aboutConclusionText = ScrollReveal({
   origin: "bottom",
-  distance: "350px",
+  distance: "290px",
   duration: 1800,
   delay: 200,
   reset: true,
