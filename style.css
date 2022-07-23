@@ -195,7 +195,7 @@ body {
   body {
     background: url("./assets/alexander-popov-R25Q-pAUeY8-unsplash.jpg")
       no-repeat 30% -15%;
-    overflow-x: hidden;
+
     max-width: 768px;
   }
 
