@@ -206,6 +206,7 @@ body {
   .main-text {
     width: 80%;
     animation: float 9s ease-in-out infinite;
+    height: auto;
   }
 
   #main-text-content {
