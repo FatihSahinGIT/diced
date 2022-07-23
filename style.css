@@ -37,6 +37,17 @@ body {
     40% -20%;
 }
 
+@font-face {
+  font-family: headerFont;
+  font-weight: 600;
+  src: url("/assets/Font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("/assets/Font/Inter/Inter-VariableFont_slnt,wght.ttf");
+}
+
 /* === NAVIGATION === */
 
 .nav-container {
@@ -124,14 +135,14 @@ body {
 }
 
 #main-header {
-  font-family: "Montserrat", sans-serif;
+  font-family: headerFont;
   font-size: var(--giga);
   font-weight: 400;
   color: var(--white);
 }
 
 #main-subtext {
-  font-family: "Montserrat", sans-serif;
+  font-family: headerFont;
   font-size: var(--big);
 }
 
@@ -235,7 +246,7 @@ body {
 }
 
 #philo-header {
-  font-family: "Montserrat", sans-serif;
+  font-family: headerFont;
   font-size: var(--giga);
   width: max-content;
 }
@@ -281,7 +292,7 @@ body {
 
 /* === ABOUT === */
 #about-header {
-  font-family: "Montserrat", sans-serif;
+  font-family: headerFont;
   font-size: var(--giga);
   margin-bottom: 20rem;
 }
@@ -320,7 +331,7 @@ body {
 }
 
 #about-artist-header {
-  font-family: "Montserrat", sans-serif;
+  font-family: headerFont;
   font-size: var(--giga);
   padding: 2rem;
   text-align: center;
