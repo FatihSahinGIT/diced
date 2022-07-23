@@ -391,7 +391,7 @@ body {
 /* === ABOUT US MEDIA QUERY === */
 @media screen and (max-width: 768px) {
   .about-container {
-    height: 240vh;
+    height: 320vh;
   }
 
   #about-artist-header {
