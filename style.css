@@ -30,6 +30,10 @@
   text-decoration: none;
 
   scroll-behavior: smooth;
+}
+
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -191,7 +195,7 @@ body {
   body {
     background: url("./assets/alexander-popov-R25Q-pAUeY8-unsplash.jpg")
       no-repeat 30% -15%;
-    overflow-x: hidden;  
+    overflow-x: hidden;
   }
 
   .main-container {
