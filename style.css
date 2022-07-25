@@ -32,10 +32,10 @@
   scroll-behavior: smooth;
 }
 
-/* html,
+html,
 body {
   overflow-x: hidden;
-} */
+}
 
 body {
   background: url("/assets/alexander-popov-R25Q-pAUeY8-unsplash.jpg") no-repeat
@@ -44,7 +44,7 @@ body {
 
 @font-face {
   font-family: headerFont;
-  font-weight: 600;
+  font-weight: 600 800 900;
   src: url("/assets/Font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
 }
 
@@ -165,7 +165,7 @@ body {
 
 #main-text-content {
   font-size: var(--h1);
-  letter-spacing: 1.25px;
+  letter-spacing: 1px;
 }
 
 #main-text-btn {
@@ -210,6 +210,7 @@ body {
 
   #main-header {
     font-size: 3.5rem;
+    font-weight: 800;
   }
 
   #main-subtext {
@@ -219,6 +220,7 @@ body {
   .main-text {
     width: 80%;
     animation: float 9s ease-in-out infinite;
+    height: max-content;
   }
 
   #main-text-content {
