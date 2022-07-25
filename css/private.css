@@ -356,6 +356,8 @@ body {
   }
 
   #steps-header {
+    width: 100%;
+    margin-left: 0;
     font-size: var(--h1);
   }
 
