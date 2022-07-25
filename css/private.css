@@ -383,3 +383,43 @@ body {
     margin: 8px;
   }
 }
+
+/* === CONTACT === */
+.contact-container {
+  height: 50vh;
+  background: var(--black);
+  color: var(--white);
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem
+  ;
+}
+
+#strong {
+  color: var(--red);
+  font-size: var(--h1);
+}
+
+#contact-header {
+  font-size: var(--h1);
+  text-align: center;
+}
+
+#content-card-text {
+  font-size: var(--h2);
+}
+
+.contact-card {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0px 0px 14px 29px rgba(0, 0, 0, 0.211);
+}
