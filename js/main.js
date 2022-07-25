@@ -56,4 +56,64 @@ const aboutConclusionText = ScrollReveal({
 
 aboutConclusionText.reveal("#about-conclusion-text");
 
+const stepsHeader = ScrollReveal({
+  origin: "left",
+  distance: "200px",
+  duration: 1500,
+  delay: 400,
+  reset: false,
+});
 
+stepsHeader.reveal("#steps-header");
+
+// SLIDES
+const slides = document.querySelectorAll(".slide");
+const slideBtn = document.querySelectorAll(".btn");
+
+let curSlide = 1;
+
+const manualNav = (manual) => {
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+
+    slideBtn.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+  });
+  slides[manual].classList.add("active");
+  slideBtn[manual].classList.add("active");
+};
+
+slideBtn.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    manualNav(i);
+    curSlide = i;
+  });
+});
+
+var repeat = function (activeClass) {
+  let active = document.getElementsByClassName("active");
+  let i = 1;
+
+  var repeater = () => {
+    setTimeout(function () {
+      [...active].forEach((activeSlide) => {
+        activeSlide.classList.remove("active");
+      });
+
+      slides[i].classList.add("active");
+      slideBtn[i].classList.add("active");
+      i++;
+
+      if (slides.length == i) {
+        i = 0;
+      }
+      if (i >= slides.length) {
+        return;
+      }
+      repeater();
+    }, 5000);
+  };
+  repeater();
+};
+repeat();
