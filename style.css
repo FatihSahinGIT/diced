@@ -143,7 +143,7 @@ body {
 #main-header {
   font-family: headerFont;
   font-size: var(--giga);
-  font-weight: 400;
+  font-weight: 600;
   color: var(--white);
 }
 

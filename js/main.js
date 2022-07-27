@@ -66,6 +66,28 @@ const stepsHeader = ScrollReveal({
 
 stepsHeader.reveal("#steps-header");
 
+const contactHeader = ScrollReveal({
+  origin: "right",
+  distance: "500px",
+  duration: 2150,
+  delay: 300,
+  reset: false
+});
+
+contactHeader.reveal(".contact-text")
+
+const questionMark = ScrollReveal({
+  origin: "right",
+  distance: "200px",
+  duration: 2150,
+  delay: 900,
+  reset: false
+});
+
+questionMark.reveal("#strong")
+
+
+
 // SLIDES
 const slides = document.querySelectorAll(".slide");
 const slideBtn = document.querySelectorAll(".btn");
