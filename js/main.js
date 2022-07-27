@@ -71,22 +71,29 @@ const contactHeader = ScrollReveal({
   distance: "500px",
   duration: 2150,
   delay: 300,
-  reset: false
+  reset: false,
 });
 
-contactHeader.reveal(".contact-text")
+contactHeader.reveal(".contact-text");
 
 const questionMark = ScrollReveal({
   origin: "right",
   distance: "200px",
   duration: 2150,
   delay: 900,
-  reset: false
+  reset: false,
 });
 
-questionMark.reveal("#strong")
+questionMark.reveal("#strong");
 
+const prevEvents = ScrollReveal({
+  distance: "400px",
+  duration: 1500,
+  delay: 400,
+  reset: true,
+});
 
+prevEvents.reveal("#prev-events-header");
 
 // SLIDES
 const slides = document.querySelectorAll(".slide");
