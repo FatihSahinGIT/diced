@@ -472,6 +472,7 @@ body {
 
   #contact-header {
     font-size: var(--h1);
+    width: 80%;
   }
 
   #strong {
