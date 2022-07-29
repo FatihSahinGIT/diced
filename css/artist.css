@@ -38,8 +38,8 @@ body {
 }
 
 body {
-  background: url("/assets/alexander-popov-R25Q-pAUeY8-unsplash.jpg") no-repeat
-    40% -20%;
+  background: url("/assets/alexander-popov-f3e6YNo3Y98-unsplash.jpg") no-repeat
+    40% 20%;
 }
 
 @font-face {
@@ -126,17 +126,16 @@ body {
 
 /* === MAIN === */
 .main-container {
-  height: 90vh;
+  height: 98vh;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  width: 95%;
 }
 
 .main-intro {
   height: max-content;
-  width: 65%;
+  width: 55%;
   text-align: right;
   color: var(--white);
 }
@@ -144,18 +143,12 @@ body {
 #main-header {
   font-family: headerFont;
   font-size: var(--giga);
-  font-weight: 600;
+  font-weight: 800;
   color: var(--white);
 }
 
-#main-subtext {
-  font-family: headerFont;
-  font-size: var(--big);
-}
-
 .main-text {
-  width: 35%;
-  margin-left: 10rem;
+  width: 30%;
   padding: 3rem;
   box-shadow: 0px 2px 25px 5px rgba(0, 0, 0, 0.1);
   background-color: #2020202c;
@@ -203,7 +196,7 @@ body {
 
   .main-container {
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
   }
 
   .main-intro {
@@ -223,7 +216,6 @@ body {
     width: 80%;
     animation: float 9s ease-in-out infinite;
     height: max-content;
-    margin-left: 0;
   }
 
   #main-text-content {
@@ -235,199 +227,158 @@ body {
   }
 }
 
-/* === PHILO === */
-.philo-container {
-  background-color: var(--black);
+/* === ARTIST SLIDE === */
+
+.slide-container {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.philo-content {
-  color: var(--white);
-
-  height: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  padding: 2rem;
-  margin: 50px;
-  width: 90%;
-}
-
-#philo-header {
-  font-family: headerFont;
-  font-size: var(--giga);
-  width: max-content;
-}
-
-#philo-text {
-  cursor: pointer;
-  font-size: var(--h2);
-  border-radius: 18px;
-  padding: 1.5rem;
-  box-shadow: 9px 8px 20px 30px rgba(0, 0, 0, 0.398);
-  animation: float 2s ease-in-out infinite;
-}
-
-#philo-text:hover {
-  animation-play-state: paused;
-}
-
-#strong {
-  color: var(--red);
-  font-size: var(--h2);
-}
-
-/* === PHILOSPHIE MEDIA QUERY === */
-@media screen and (max-width: 768px) {
-  .philo-container {
-    height: auto;
-  }
-  .philo-content {
-    flex-direction: column;
-    width: max-content;
-  }
-
-  #philo-header {
-    font-size: 2.8rem;
-  }
-
-  #philo-text,
-  #strong {
-    width: 280px;
-    font-size: var(--h3);
-  }
-}
-
-/* === ABOUT === */
-#about-header {
-  font-family: headerFont;
-  font-size: var(--giga);
-  margin-bottom: 20rem;
-}
-
-.about-container {
+  width: 100%;
   background-color: var(--black);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-header {
+  height: 20vh;
   color: var(--white);
-  height: 250vh;
-  display: flex;
-  padding: 4rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-.about-content {
-  margin: 5rem;
-}
-
-.about-melvin {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 120px;
-  margin-bottom: 200px;
-  height: 50%;
-}
-
-.about-melvin-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: max-content;
-}
-
-#about-artist-header {
-  font-family: headerFont;
-  font-size: var(--giga);
-  padding: 2rem;
-  text-align: center;
-}
-
-#about-text {
-  font-size: var(--h1);
-  text-align: center;
-}
-
-.about-john {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-  gap: 120px;
-  margin-bottom: 200px;
-  height: 50%;
-}
-
-.about-john-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: max-content;
-}
-
-#about-img {
-  height: auto;
-  width: 520px;
-  box-shadow: 9px 8px 20px 30px rgba(0, 0, 0, 0.398);
-  border-radius: 16px;
-  animation: float 4s ease-in-out infinite;
-}
-
-.about-conclusion {
-  background-color: var(--black);
-  text-align: center;
-  height: 110vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#about-conclusion-text,
-#about-conclusion-text b {
+#slide-heading {
   font-size: var(--big);
-  color: var(--white);
+  font-family: headerFont;
+  font-weight: 900;
+  animation: float 5s ease-in-out infinite;
 }
 
-#about-conclusion-text b {
+.slide-content {
+  padding: 45px 20px;
+  margin: 0 40px;
+  overflow: hidden;
+  max-width: 1420px;
+  border-radius: 25px;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 4rem;
+}
+
+.card-content > * {
+  padding: 1rem;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.card {
+  border-radius: 25px;
+  background: var(--white);
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--red);
+  border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: var(--red);
+}
+
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: var(--white);
+}
+
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: var(--red);
+  padding: 3px;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--black);
+}
+
+#card-social-img {
+  height: auto;
+  max-width: 50px;
+}
+
+#name {
+  font-size: var(--h2);
+  font-weight: 600;
+  color: var(--black);
+}
+
+.desc {
+  font-size: var(--h4);
+  color: var(--black);
+  text-align: center;
+}
+
+button {
+  border: none;
+  font-size: var(--h4);
   color: var(--red);
+  padding: 8px 16px;
+  background-color: var(--black);
+  border-radius: 8px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
-/* === ABOUT US MEDIA QUERY === */
+button:hover {
+  background-color: #1a1a1ac5;
+}
+
+.swiper-navBtn {
+  color: var(--red) !important;
+  margin: 2rem;
+  transition: all 0.5s ease;
+}
+
+.swiper-pagination {
+  color: var(--red) !important;
+  opacity: 1;
+}
+
+.swiper-navBtn:hover {
+  color: var(--white) !important;
+}
+
 @media screen and (max-width: 768px) {
-  .about-container {
-    height: 400vh;
-  }
-
-  #about-artist-header {
-    font-size: 4.5rem;
-    padding: 1rem;
-  }
-
-  #about-text {
-    font-size: var(--h2);
-  }
-
-  .about-melvin,
-  .about-john {
-    flex-direction: column;
-  }
-
-  #about-img {
-    max-width: 280px;
-  }
-
-  #about-conclusion-text,
-  #about-conclusion-text b {
-    font-size: var(--h1);
-    width: 70%;
+  .swiper-navBtn {
+    display: none !important;
   }
 }
 

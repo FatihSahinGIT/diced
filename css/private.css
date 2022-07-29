@@ -45,6 +45,7 @@
 
 body {
   background: url("/assets/private.jpg") 26% -15%;
+  overflow-x: hidden;
 }
 
 /* === NAVIGATION === */
@@ -402,7 +403,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
 }
 
 #strong {
@@ -415,6 +415,7 @@ body {
   width: 100%;
   text-align: center;
   font-family: headerFont;
+  margin-bottom: 1rem;
 }
 
 #contact-header-subtext,
@@ -422,18 +423,16 @@ body {
   font-size: var(--h1);
   width: 79%;
   text-align: center;
+  font-family: headerFont;
 }
 
-#contact-header-subtext b {
-  margin: 0 0.25rem;
-}
 #content-card-text {
   font-size: var(--h1);
 }
 
 .contact-card {
   display: flex;
-  width: 70%;
+  width: 50%;
   height: 40vh;
   flex-direction: column;
   justify-content: center;
@@ -450,7 +449,7 @@ body {
 
 #card-img {
   height: auto;
-  max-width: 60px;
+  max-width: 65px;
   filter: brightness(0) invert(1);
 }
 
@@ -472,7 +471,6 @@ body {
 
   #contact-header {
     font-size: var(--h1);
-    width: 95%;
   }
 
   #strong {
